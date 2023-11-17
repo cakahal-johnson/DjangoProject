@@ -1,0 +1,51 @@
+#from terminal 
+mkdir buildDjango
+cd buildDjango
+python -m venv tutorial-env
+
+#install venv
+pip install virtualenv
+
+#activate venv on Windows
+==================================================
+powershell
+Copy code
+.\tutorial-env\Scripts\activate
+Alternative for Activating the Virtual Environment:
+Instead of using the source command, you can use the .\ prefix to run the script directly:
+
+powershell
+Copy code
+.\tutorial-env\Scripts\activate
+After activating the virtual environment, you should see the virtual environment name in your command prompt, indicating that it's active.
+
+Remember to change the execution policy back to a more restrictive setting (e.g., "Restricted") after you're done if you're concerned about security. You can do this with the Set-ExecutionPolicy command.
+==================================================
+.\tutorial-env\Scripts\activate
+
+#activate venv
+source tutorial-env/bin/activate
+# Create a virtual environment
+virtualenv venv
+
+# Activate the virtual environment (on Windows)
+venv\Scripts\activate
+
+# Activate the virtual environment (on macOS/Linux)
+source venv/bin/activate
+
+# Install Django
+pip install django
+
+
+#checking
+python -m django version
+
+#creating a Project App
+django-admin startproject dhotel
+
+#to run the Project
+cd dhotel
+python manage.py runserver
+python manage.py runserver
+
