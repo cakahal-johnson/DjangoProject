@@ -49,3 +49,6 @@ cd dhotel
 python manage.py runserver
 python manage.py runserver
 
+#creating the working App
+python -m django startapp myhotel
+
